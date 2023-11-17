@@ -3,25 +3,21 @@ body {
     margin: 0;
     padding: 0;
     background-color: #95549f;
-}
-  
+} 
 header {
   background-color: #87bbdc;
   color: #fff;
   text-align: center;
   padding: 20px 0;
 }
-
 main {
   text-align: center;
   margin: 20px;
 }
-
 form {
   display: flex;
   margin-bottom: 20px;
 }
-
 input[type="text"] {
   flex: 1;
   padding: 10px;
@@ -29,26 +25,22 @@ input[type="text"] {
   border-radius: 4px;
   margin-right: 10px;
 }
-
 #category-select, #deadline-input, #priority-select {
   text-align: center;
   background-color: #F1DDBF;
   margin: 0;
   border-color: #F1DDBF;
 }
-
 #deadline-input {
   border-bottom-left-radius: 25px;
   border-top-left-radius: 25px;
   border-style: none;
 }
-
 #priority-select {
   border-bottom-right-radius: 25px;
   border-top-right-radius: 25px;
   margin-right: 10px;
 }
-
 #add {
   padding: 10px 20px;
   background-color: #e1741a;
@@ -60,15 +52,12 @@ input[type="text"] {
   font-size: 17px;
   transition: background-color 0.2s, color 0.2s, transform 0.1s;
 }
-
 #add:hover {
   background-color: red;
   color: black;
   cursor: pointer;
   transform: translate3d(0,4px,0);
 }
-
-
 .clearAll {
   margin-left: 10px;
   padding: 10px 10px;
@@ -82,17 +71,14 @@ input[type="text"] {
   font-size: 15px;
   transition: background-color 0.2s, color 0.2s, transform 0.1s;
 }
-
 .clearAll:hover {
   background-color: red;
   cursor: pointer;
   transform: translate3d(0,4px,0);
 }
-
 .clearAll button{
   margin-left: 10px;
 }
-
 #categories {
   display: flex;
   justify-content: space-between;
@@ -100,7 +86,6 @@ input[type="text"] {
   margin-right: auto; 
   padding: 15px;
 }
-
 .work-box,
 .shopping-box, 
 .study-box, 
@@ -112,11 +97,9 @@ input[type="text"] {
   display: block;
   overflow: auto; /* Hide scrollbars until overflow occurs */
 }
-
 .box:last-child {
   padding-right: 0; /* Remove padding from the last .box element */
 }
-
 .head {
   display: flex;
   position:sticky;
@@ -127,12 +110,10 @@ input[type="text"] {
   align-items: center;
   justify-content: space-evenly;
 }
-
 .title {
   font-size: 19px;
   font-family: Georgia, 'Times New Roman', Times, serif;
 }
-
 .clear {
   display: flex;
   width: 80px;
@@ -147,49 +128,41 @@ input[type="text"] {
   font-size: 15px;
   transition: background-color 0.2s, color 0.2s, transform 0.1s;
 }
-  /* Hover styling */
 .clear:hover {
   background-color: #ff7f50;
   color: #fff; 
   cursor: pointer;
   transform: translate3d(2px,2px,4px);
 }
-
 h3 {
   position: sticky;
-  top: 44px; /* Adjust this value as needed */
-  font-size: 14px; /* Adjust the font size as needed */
-  font-weight: bold; /* Make the text bold */
-  color: #333; /* Set the text color to your preference */
-  margin: 0; /* Add spacing above and below the header */
+  top: 44px;
+  font-size: 14px;
+  font-weight: bold;
+  color: #333;
+  margin: 0;
   background-color: antiquewhite;
 }
-
-
 ul {
   list-style-type: none;
   padding: 0;
 }
-
 li {
   display: flex;
   align-items: center;
   padding: 10px;
   border-bottom: 1px solid #ccc;
 }
-
 .completed {
   text-decoration: line-through;
 }
-
-/* Responsive design for screens with max-width 768px */
 @media screen and (max-width: 1135px) {
   #categories {
     flex-direction: column;
     align-items: center;
   }
   .work-box, .shopping-box, .study-box, .personal-box {
-    width: 100%; /* Full width on smaller screens */
-    margin-bottom: 20px; /* Add spacing between boxes */
+    width: 100%;
+    margin-bottom: 20px;
   }
 }
