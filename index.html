@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title> ToDo App </title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1> ToDo App </h1>
+  </header>
+  <main>
+    <form id="todo-form">
+      <input type="text" id="todo-input" placeholder="Enter a task">
+      <input type="date" id="deadline-input">
+      <select id="category-select">
+        <option id="new-category-option" value="new_category"> Add More</option>
+        <option value="work">Work</option>
+        <option value="personal">Personal</option>
+        <option value="shopping">Shopping</option>
+        <option value="study">Study</option>
+      </select>
+      <select id="priority-select">
+        <option value="LOW">LOW </option>
+        <option value="MEDIUM">MEDIUM</option>
+        <option value="HIGH">HIGH</option>
+      </select>
+      <button id="add" type="submit">Add</button>
+      <button class="clearAll">Clear All</button>
+    </form>
+    <div id="categories">
+        <div class="work-box">
+            <div class="head">
+              <p class="title">Work List</p>
+              <button class="clear" type="submit" data-category="work">Clear</button>
+            </div>
+            <ul id="work-list"></ul>
+        </div>
+        <div class="personal-box">
+          <div class="head">
+            <p class="title">Personal List</p>
+            <button class="clear" type="submit" data-category="personal">Clear</button>
+          </div>  
+          <ul id="personal-list"></ul>
+        </div>
+        <div class="shopping-box">
+          <div class="head">
+            <p class="title">Shopping List</p>
+            <button class="clear" type="submit" data-category="shopping">Clear</button>
+          </div>  
+          <ul id="shopping-list"></ul>
+        </div>
+        <div class="study-box">
+          <div class="head">
+            <p class="title">Study List</p>
+            <button class="clear" type="submit" data-category="study">Clear</button>
+          </div>
+          <ul id="study-list"></ul>
+        </div>
+    </div>
+    <!-- Container for new categories -->
+    <div class="new_categories"></div>
+  </main>
+  <script src="app.js"></script>
+</body>
+</html>
